@@ -2,10 +2,11 @@ package api
 
 import (
 	"api-client/config"
+	"api-client/dto"
 	"net/http"
 )
 
-type Response = interface{}
+type Response = dto.Order
 
 type APIClient struct {
 	Client *RestClient
@@ -20,35 +21,7 @@ func NewAPIClient(cfg config.Config) *APIClient {
 	}
 }
 
-func (c *APIClient) Post(body interface{}) Query[Response] {
-	return NewQuery[Response](c.Client).
-		WithMethod(http.MethodPost).
-		WithPath("/orders").
-		WithBody(body)
-}
-
-func (c *APIClient) Put(body interface{}) Query[Response] {
-	return NewQuery[Response](c.Client).
-		WithMethod(http.MethodPost).
-		WithPath("/orders").
-		WithBody(body)
-}
-
-func (c *APIClient) Patch(body interface{}) Query[Response] {
-	return NewQuery[Response](c.Client).
-		WithMethod(http.MethodPost).
-		WithPath("/orders").
-		WithBody(body)
-}
-
-func (c *APIClient) Delete(body interface{}) Query[Response] {
-	return NewQuery[Response](c.Client).
-		WithMethod(http.MethodPost).
-		WithPath("/orders").
-		WithBody(body)
-}
-
-func (c *APIClient) Get(body interface{}) Query[Response] {
+func (c *APIClient) SubmitOrder(body dto.Order) Query[Response] {
 	return NewQuery[Response](c.Client).
 		WithMethod(http.MethodPost).
 		WithPath("/orders").

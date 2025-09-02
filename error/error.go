@@ -8,4 +8,5 @@ var (
 	ErrTooManyRequests = errors.New("too many requests")
 	ErrInternalAPICall = errors.New("internal server error with api call")
 	ErrBadRequest      = errors.New("bad request")
+	ErrProductEmpty    = errors.New("Product Empty")
 )

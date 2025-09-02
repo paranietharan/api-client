@@ -1,0 +1,22 @@
+[
+  { "id": "101", "name": "Burger" },
+  { "id": "102", "name": "Pizza" },
+  { "id": "103", "name": "Pasta" },
+  { "id": "104", "name": "Coke" },
+  { "id": "105", "name": "Fries" },
+  { "id": "106", "name": "Sandwich" },
+  { "id": "107", "name": "Salad" },
+  { "id": "108", "name": "Taco" },
+  { "id": "109", "name": "Sushi" },
+  { "id": "110", "name": "Steak" },
+  { "id": "111", "name": "Chicken Wings" },
+  { "id": "112", "name": "Ice Cream" },
+  { "id": "113", "name": "Pancakes" },
+  { "id": "114", "name": "Donut" },
+  { "id": "115", "name": "Coffee" },
+  { "id": "116", "name": "Tea" },
+  { "id": "117", "name": "Smoothie" },
+  { "id": "118", "name": "Hot Dog" },
+  { "id": "119", "name": "Nachos" },
+  { "id": "120", "name": "Juice" }
+]
